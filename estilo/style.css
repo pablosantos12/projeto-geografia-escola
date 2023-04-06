@@ -18,6 +18,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+a.exterto::after {
+    content: '\00A0\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
     min-height: 150px;
@@ -111,6 +115,42 @@ main img.pequena {
     display: block;
     margin: auto;
 }
+
+aside {
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    text-align: center;
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.290);
+}
+
+aside > ul {
+    list-style-type: '\274\00A\00a0';
+    list-style-position: inside;
+}
+
+.externo {
+    color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+.externo:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
 
 footer {
     background-color: var(--cor0);
